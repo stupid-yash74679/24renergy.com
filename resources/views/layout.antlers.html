@@ -1,16 +1,53 @@
-<!doctype html>
+
+<!DOCTYPE html>
+<!--[if IE 8]> <html lang="en" class="ie8 no-js"> <![endif]-->
+<!--[if IE 9]> <html lang="en" class="ie9 no-js"> <![endif]-->
+<!--[if !IE]><!-->
 <html lang="{{ site:short_locale }}">
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        {{ alt_seo:meta }}
-        {{ vite src="resources/js/site.js|resources/css/site.css" }}
-    </head>
-    <body class="alt_starter_kit page-{{ slug }} relative" x-data="{navOpen: false, modalOpen: false}">
+<!--<![endif]-->
+<!-- Begin Head -->
+
+
+<!-- Mirrored from kamleshyadav.com/html/solar-supplier/html/bootstrap-5/index3/index3.html by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 19 Nov 2024 17:15:13 GMT -->
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description"  content=""/>
+    <meta name="keywords" content=""/>
+    <meta name="author"  content=""/>
+    <meta name="MobileOptimized" content="320" />
+    {{ alt_seo:meta }}
+    <link rel="stylesheet" href="/assets/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="/assets/css/fonts.css" />
+    <link rel="stylesheet" href="/assets/css/fontawesome.min.css" />
+    <link rel="stylesheet" href="/assets/css/magnific-popup.css" />
+    <link rel="stylesheet" href="/assets/css/swiper.min.css" />
+    <link rel="stylesheet" href="/assets/css/animate.css" />
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <link rel="stylesheet" href="/assets/css/color3.css" />
+    <!--=== Favicon Link ===-->
+    <link rel="shortcut icon" type="image/png" href="/assets/images/fav-icon.png">
+</head>
+<body class="index_three">
+<section class="ss_section_one"> <!--===== Section One Start =====-->
+    <div class="container-fluid">
         {{ partial src="parts/header"}}
         {{ template_content }}
-        {{ partial src="parts/footer"}}
-        {{ AltCookies:Toast }}
-    </body>
+    </div>
+</section> <!--===== Section One End =====-->
+{{ partial src="parts/footer"}}
+{{ AltCookies:Toast }}
+
+
+<!--===== script start =====-->
+<script src="/assets/js/jquery.min.js"></script>
+<script src="/assets/js/bootstrap.min.js"></script>
+<script src="/assets/js/jquery.magnific-popup.min.js"></script>
+<script src="/assets/js/isotope.pkgd.min.js"></script>
+<script src="/assets/js/swiper.min.js"></script>
+<script src="/assets/js/wow.min.js"></script>
+<script src="/assets/js/script.js"></script>
+
+</body>
+
 </html>
