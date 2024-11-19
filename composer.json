@@ -19,10 +19,10 @@
         "alt-design/alt-sitemap": "^1.2",
         "laravel/framework": "^11",
         "laravel/tinker": "^2.9",
-        "statamic/cms": "^5.0"
+        "statamic/cms": "^5.0",
+        "statamic/eloquent-driver": "^4.17"
     },
     "require-dev": {
-        "alt-design/alt-starter-kit": "^1.0",
         "barryvdh/laravel-debugbar": "^3.8.1",
         "fakerphp/faker": "^1.23",
         "laravel/pint": "^1.13",
@@ -80,11 +80,5 @@
         }
     },
     "minimum-stability": "dev",
-    "prefer-stable": true,
-    "repositories": [
-        {
-            "type": "vcs",
-            "url": "https://github.com/alt-design/alt-starter-kit"
-        }
-    ]
+    "prefer-stable": true
 }
