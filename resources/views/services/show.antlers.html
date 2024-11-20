@@ -1,0 +1,494 @@
+<section class="ss_about_main"> <!--===== Section Two Start =====-->
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-lg-12 align-self-center">
+                <div class="ss_ab_right wow fadeIn" data-wow-delay="0.2s" data-wow-duration="1s">
+                    <div class="blog-content-custom">
+                        <h1>{{ title }}</h1>
+                        <img src="{{ thumbnail_image }}" />
+                        {{ page_content }}
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<style>
+    /* Ensure that the custom styles are loaded after the main styles.css */
+
+    /* Scoped Styles for .blog-content-custom */
+    .blog-content-custom {
+        /* Base Styles */
+        width: 100%;
+        color: #333333;
+        background-color: #ffffff;
+        padding: 40px;
+        margin: 0 auto;
+        line-height: 1.6;
+        position: relative;
+        overflow: hidden;
+        border-radius: 8px;
+        transition: background-color 0.3s ease, color 0.3s ease;
+        text-align: justify;
+    }
+
+    /* Smooth Fade-In Animation */
+    .blog-content-custom {
+        opacity: 0;
+        animation: fadeIn 1s forwards;
+    }
+
+    @keyframes fadeIn {
+        to {
+            opacity: 1;
+        }
+    }
+
+    /* Typography */
+    .blog-content-custom h1,
+    .blog-content-custom h2,
+    .blog-content-custom h3,
+    .blog-content-custom h4,
+    .blog-content-custom h5,
+    .blog-content-custom h6 {
+        color: #111111;
+        margin-bottom: 20px;
+        font-weight: 700;
+        position: relative;
+    }
+
+    .blog-content-custom h1 {
+        font-size: 2.5em;
+    }
+
+    .blog-content-custom h2 {
+        font-size: 2em;
+    }
+
+    .blog-content-custom h3 {
+        font-size: 1.75em;
+    }
+
+    .blog-content-custom h4 {
+        font-size: 1.5em;
+    }
+
+    .blog-content-custom h5 {
+        font-size: 1.25em;
+    }
+
+    .blog-content-custom h6 {
+        font-size: 1em;
+    }
+
+    .blog-content-custom p {
+        margin-bottom: 15px;
+        color: #444444;
+        transition: color 0.3s ease;
+    }
+
+    .blog-content-custom p:hover {
+        color: #000000;
+    }
+
+    /* Links */
+    .blog-content-custom a {
+        color: #1a73e8;
+        text-decoration: none;
+        position: relative;
+        transition: color 0.3s ease;
+    }
+
+    .blog-content-custom a::after {
+        content: '';
+        position: absolute;
+        width: 0%;
+        height: 2px;
+        bottom: -2px;
+        left: 0;
+        background-color: #1a73e8;
+        transition: width 0.3s ease;
+    }
+
+    .blog-content-custom a:hover::after {
+        width: 100%;
+    }
+
+    .blog-content-custom a:hover {
+        color: #1558b0;
+    }
+
+    /* Navigation and Search */
+    .blog-content-custom .navbar {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 40px;
+        animation: slideInDown 0.5s forwards;
+    }
+
+    @keyframes slideInDown {
+        from {
+            transform: translateY(-20px);
+            opacity: 0;
+        }
+        to {
+            transform: translateY(0);
+            opacity: 1;
+        }
+    }
+
+    .blog-content-custom .global-search {
+        position: relative;
+    }
+
+    .blog-content-custom .global-search input {
+        padding: 10px 15px;
+        padding-right: 35px;
+        border: 1px solid #cccccc;
+        border-radius: 25px;
+        width: 250px;
+        background-color: #f9f9f9;
+        color: #333333;
+        font-size: 1em;
+        transition: background-color 0.3s ease, width 0.3s ease, border-color 0.3s ease;
+    }
+
+    .blog-content-custom .global-search input::placeholder {
+        color: #999999;
+    }
+
+    .blog-content-custom .global-search input:focus {
+        background-color: #e6e6e6;
+        outline: none;
+        width: 300px;
+        border-color: #1a73e8;
+    }
+
+    .blog-content-custom .global-search::after {
+        content: '/';
+        position: absolute;
+        right: 15px;
+        top: 50%;
+        transform: translateY(-50%);
+        color: #999999;
+        font-size: 1em;
+    }
+
+    /* Buttons */
+    .blog-content-custom button,
+    .blog-content-custom .button {
+        padding: 10px 25px;
+        background-color: #1a73e8;
+        border: none;
+        border-radius: 25px;
+        color: #ffffff;
+        cursor: pointer;
+        transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+        font-size: 1em;
+        position: relative;
+        overflow: hidden;
+    }
+
+    .blog-content-custom button:hover,
+    .blog-content-custom .button:hover {
+        background-color: #1558b0;
+        transform: translateY(-2px);
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    }
+
+    /* Forms */
+    .blog-content-custom input[type="text"],
+    .blog-content-custom input[type="email"],
+    .blog-content-custom input[type="password"],
+    .blog-content-custom textarea,
+    .blog-content-custom select {
+        width: 100%;
+        padding: 12px 15px;
+        border: 1px solid #cccccc;
+        border-radius: 5px;
+        margin-bottom: 20px;
+        background-color: #ffffff;
+        color: #333333;
+        font-size: 1em;
+        transition: border-color 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .blog-content-custom input[type="text"]::placeholder,
+    .blog-content-custom input[type="email"]::placeholder,
+    .blog-content-custom input[type="password"]::placeholder,
+    .blog-content-custom textarea::placeholder,
+    .blog-content-custom select::placeholder {
+        color: #999999;
+    }
+
+    .blog-content-custom input[type="text"]:focus,
+    .blog-content-custom input[type="email"]:focus,
+    .blog-content-custom input[type="password"]:focus,
+    .blog-content-custom textarea:focus,
+    .blog-content-custom select:focus {
+        border-color: #1a73e8;
+        box-shadow: 0 0 5px rgba(26, 115, 232, 0.3);
+        outline: none;
+    }
+
+    /* Tables */
+    .blog-content-custom table {
+        width: 100%;
+        border-collapse: collapse;
+        margin-bottom: 30px;
+        overflow-x: auto;
+        display: block;
+    }
+
+    .blog-content-custom table th,
+    .blog-content-custom table td {
+        padding: 5px 12px; /* Reduced padding */
+        border: 1px solid #dddddd;
+        text-align: left;
+        color: #333333;
+    }
+
+    .blog-content-custom table th {
+        background-color: #f2f2f2;
+        font-weight: 700;
+    }
+
+    .blog-content-custom table tr:nth-child(even) {
+        background-color: #fafafa;
+    }
+
+    .blog-content-custom table tr:hover {
+        background-color: #f1f1f1;
+        transition: background-color 0.3s ease;
+    }
+
+    /* Blockquotes */
+    .blog-content-custom blockquote {
+        border-left: 4px solid #cccccc;
+        padding: 15px 20px;
+        margin: 25px 0;
+        background-color: #f9f9f9;
+        color: #555555;
+        font-style: italic;
+        position: relative;
+        transition: background-color 0.3s ease, color 0.3s ease;
+    }
+
+    .blog-content-custom blockquote::before {
+        content: "“";
+        font-size: 3em;
+        position: absolute;
+        left: 10px;
+        top: -10px;
+        color: #cccccc;
+        line-height: 1;
+    }
+
+    .blog-content-custom blockquote::after {
+        content: "”";
+        font-size: 3em;
+        position: absolute;
+        right: 10px;
+        bottom: -10px;
+        color: #cccccc;
+        line-height: 1;
+    }
+
+    .blog-content-custom blockquote:hover {
+        background-color: #e6e6e6;
+        color: #333333;
+    }
+
+    /* Horizontal Rules */
+    .blog-content-custom hr {
+        border: none;
+        height: 1px;
+        background-color: #dddddd;
+        margin: 30px 0;
+        position: relative;
+        transition: background-color 0.3s ease;
+    }
+
+    .blog-content-custom hr::before {
+        content: "";
+        position: absolute;
+        top: -10px;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 40px;
+        height: 40px;
+        background-color: #ffffff;
+        border: 1px solid #dddddd;
+        border-radius: 50%;
+    }
+
+    .blog-content-custom hr:hover {
+        background-color: #cccccc;
+    }
+
+    /* Images */
+    .blog-content-custom img {
+        max-width: 100%;
+        height: auto;
+        display: block;
+        margin: 30px 0;
+        border-radius: 8px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .blog-content-custom img:hover {
+        transform: scale(1.02);
+        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    }
+
+    /* Lists */
+    .blog-content-custom ul,
+    .blog-content-custom ol {
+        padding-left: 30px; /* Reduced padding */
+        margin-bottom: 20px;
+    }
+
+    .blog-content-custom ul {
+        list-style: none;
+    }
+
+    .blog-content-custom ul li {
+        position: relative;
+        padding-left: 20px;
+        margin-bottom: 8px; /* Reduced space between li */
+        color: #444444;
+        transition: color 0.3s ease;
+    }
+
+    .blog-content-custom ul li::before {
+        content: "•";
+        position: absolute;
+        left: 0;
+        color: #1a73e8;
+        font-size: 1.2em;
+    }
+
+    .blog-content-custom ul li:hover {
+        color: #000000;
+    }
+
+    .blog-content-custom ol {
+        counter-reset: list-counter;
+    }
+
+    .blog-content-custom ol li {
+        position: relative;
+        padding-left: 25px;
+        margin-bottom: 8px; /* Reduced space between li */
+        color: #444444;
+        transition: color 0.3s ease;
+    }
+
+    .blog-content-custom ol li::before {
+        counter-increment: list-counter;
+        content: counter(list-counter) ".";
+        position: absolute;
+        left: 0;
+        color: #1a73e8;
+        font-weight: 700;
+    }
+
+    .blog-content-custom ol li:hover {
+        color: #000000;
+    }
+
+    /* Footer */
+    .blog-content-custom .footer {
+        margin-top: 50px;
+        border-top: 1px solid #dddddd;
+        padding-top: 20px;
+        color: #777777;
+        font-size: 0.9em;
+        animation: fadeInUp 0.5s forwards;
+    }
+
+    @keyframes fadeInUp {
+        from {
+            transform: translateY(20px);
+            opacity: 0;
+        }
+        to {
+            transform: translateY(0);
+            opacity: 1;
+        }
+    }
+
+    /* Additional Sections */
+    .blog-content-custom .header,
+    .blog-content-custom .sidebar {
+        background-color: #f9f9f9;
+        padding: 20px;
+        border: 1px solid #dddddd;
+        border-radius: 8px;
+        margin-bottom: 20px;
+        transition: background-color 0.3s ease, border-color 0.3s ease;
+    }
+
+    .blog-content-custom .header:hover,
+    .blog-content-custom .sidebar:hover {
+        background-color: #e6e6e6;
+        border-color: #cccccc;
+    }
+
+    /* Responsive Design */
+    @media (max-width: 768px) {
+        .blog-content-custom {
+            padding: 20px;
+        }
+
+        .blog-content-custom .navbar {
+            flex-direction: column;
+            align-items: flex-start;
+        }
+
+        .blog-content-custom .global-search input {
+            width: 100%;
+            margin-top: 10px;
+        }
+
+        .blog-content-custom h1 {
+            font-size: 2em;
+        }
+
+        .blog-content-custom h2 {
+            font-size: 1.75em;
+        }
+
+        .blog-content-custom h3 {
+            font-size: 1.5em;
+        }
+
+        .blog-content-custom h4 {
+            font-size: 1.25em;
+        }
+
+        .blog-content-custom h5 {
+            font-size: 1em;
+        }
+
+        .blog-content-custom h6 {
+            font-size: 0.875em;
+        }
+    }
+    .blog-content-custom table tbody tr th p
+    {
+        margin-bottom: 0px !important;
+    }
+    .blog-content-custom table tbody tr p{
+        margin-bottom: 0px !important;
+
+    }
+    .blog-area blockquote p {
+        color: #262424;
+        line-height: 1.5em;
+        margin-top: 10px;
+    }
+
+</style>
