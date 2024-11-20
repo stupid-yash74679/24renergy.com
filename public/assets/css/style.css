@@ -1,12 +1,12 @@
 /*--------------------- Copyright (c) 2019 --------------------------
-[Master Stylesheet] 
+[Master Stylesheet]
 Project: Solar Supplier
-Version: 1.0.0 
+Version: 1.0.0
 Author: Kamleshyadav
- ------------------------------------------------------------------- 
-[Table of contents] 
-1. Body 
-2. Normal Css 
+ -------------------------------------------------------------------
+[Table of contents]
+1. Body
+2. Normal Css
 3. Header Css / .ss_index_one
 4. Banner Css / .ss_banner_main
 5. Feature Css / .ss_section_two
@@ -157,7 +157,7 @@ h3:before {
 }
 .index_three h3:before {
 	bottom: -22px;
-    border: 2px solid #fc6c54;
+    border: 2px solid #00334e;
     border-radius: 30px;
 	width: 8px;
     height: 8px;
@@ -203,7 +203,7 @@ h3.ss_h3_center:before {
 }
 .ss_index_one, .ss_index_two, .ss_index_three{
 	background-repeat:no-repeat;
-	overflow: hidden;	
+	overflow: hidden;
 }
 
 .ss_header .ss_menu li{
@@ -856,7 +856,7 @@ h3.ss_h3_center:before {
 /* ===Section Six=== */
 
 .ss_section_six{
-	padding-bottom:65px; 	
+	padding-bottom:65px;
 }
 .ss_six_product {
     position: relative;
@@ -872,7 +872,7 @@ h3.ss_h3_center:before {
     overflow: visible;
 }
 .ss_product_content h2 {
-	white-space: nowrap; 
+	white-space: nowrap;
 	overflow: hidden;
 	text-overflow: ellipsis;
 	padding-right: 40px;
@@ -1167,7 +1167,7 @@ input,.ss_address_form select {
 	position: relative;
 }
 .ss_foot_news_one .ss_btn{
-    position: absolute;    
+    position: absolute;
     right: 0;
 }
 .ss_section_footer{
@@ -1185,7 +1185,7 @@ input,.ss_address_form select {
 }
 .ss_section_footer ul li{
 	padding-top:10px;
-	list-style:none;	
+	list-style:none;
 }
 h2.ss_foot_head {
 	padding-bottom: 20px;
@@ -1335,7 +1335,7 @@ h2.ss_foot_head {
 }
 .ss_pv_right img {
     right: -102px;
-    position: absolute;  
+    position: absolute;
 }
 .ss_pv_one{
 	overflow:hidden;
@@ -1394,10 +1394,10 @@ h2.ss_foot_head {
 	margin:26px 0px 20px;
 	position:relative;
 }
-.s_remember label{ 
+.s_remember label{
 	font-size:14px;
 }
-.s_remember .s_checkbox{ 
+.s_remember .s_checkbox{
 	position: absolute;
 	top: 4px;
 	left: 0;
@@ -1502,7 +1502,7 @@ button.ss_btn:hover {
 }
 .ss_contact_left svg{
 	width:30px;
-	height:30px;	
+	height:30px;
 	fill:#fff;
 }
 .ss_contact_left h2,.ss_contact_left p{
@@ -1559,7 +1559,7 @@ button.ss_btn:hover {
     top: -50px;
     left: -220px;
     width: 395px;
-}	
+}
 .ss_about_graph.ss_box_bg a {
     color: #5b86e5;
     display: inline-block;
@@ -1568,8 +1568,8 @@ button.ss_btn:hover {
     float: right;
 }
 #chart-container{
- height: 600px; 
-}	
+ height: 600px;
+}
 .manage-padding {
     position: relative;
 }
@@ -1682,7 +1682,7 @@ button.ss_btn:hover {
     transition: 0.5s;
     opacity: 0;
     visibility: hidden;
-	
+
 }
 .team_main:hover:after{
 	visibility:visible;
@@ -1695,7 +1695,7 @@ button.ss_btn:hover {
     bottom: 0px;
     z-index: 5;
     left: 0;
-    right: 0;	
+    right: 0;
 	opacity:0;
 	visibility:hidden;
 	transition:0.3s;
@@ -2042,7 +2042,7 @@ a:hover .fa-pinterest-p {
 }
 .ss_user {
     padding: 20px 0px 15px;
-}	
+}
 .ss_user a {
     display: inline-block;
     margin-right: 30px;
@@ -2108,7 +2108,7 @@ a:hover .fa-pinterest-p {
 	list-style:none;
 }
 .ss_comment{
-	padding-top:10px;	
+	padding-top:10px;
 }
 .post_head,.post_social {
     margin-top: 10px;
@@ -2266,7 +2266,7 @@ a:hover .fa-pinterest-p {
     text-align: center;
 }
 .ss_cart tr th:first-child {
-    text-align:left;	
+    text-align:left;
 }
 .cart_two {
     text-align: center;
@@ -2422,7 +2422,7 @@ td.cart_two, td.cart_three {
     display: inline-block;
     border: 1px solid #ddd;
     height: 70px;
-    line-height: 85px;	
+    line-height: 85px;
     margin-top: 20px;
 }
 .ss_payment{
@@ -2670,7 +2670,7 @@ div#thumbs_img ul{
     width: 730px;
     height: 320px;
     animation: mover 5s linear infinite alternate;
-	
+
 }
 .ss_shape_dot {
     background-image: radial-gradient(rgba(91, 134, 229, 0.34) 2px,transparent 2px);
@@ -2688,7 +2688,7 @@ div#thumbs_img ul{
 	25% { transform: translateY(50px); }
 	50% { transform: translateX(80px); }
     100% { transform: translateY(80px); }
-	
+
 }
 .ss_section_four{
 	position:relative;
@@ -2743,7 +2743,7 @@ div#thumbs_img ul{
 }
 .ss_land_home {
     overflow: hidden;
-	position:relative;  
+	position:relative;
 }
 .ss_land_pages{
 	padding-top:96px;
@@ -2798,7 +2798,7 @@ h2.ss_come_index {
     display: inline-block;
     padding: 0;
     max-width: 150px;
-    background: #fc6c54;
+    background: #00334e;
     color: #fff;
     position: absolute;
     top: 50%;
@@ -2815,7 +2815,7 @@ h2.ss_come_index {
 	background: #fff;
 }
 .ss_btn.demo_btn:hover{
-	color:#fc6c54;
+	color:#00334e;
 }
 .ss_index_name h2 {
     z-index: 3;
@@ -2845,7 +2845,7 @@ h2.ss_come_index {
 	font-size: 21px;
 }
 .feature_svg svg {
-    fill: #fc6c54;
+    fill: #00334e;
 }
 .land_feature {
     text-align: center;
@@ -3017,7 +3017,7 @@ html{
 }
 /* ===responsive css=== */
 
-@media screen and (min-width: 1921px){	
+@media screen and (min-width: 1921px){
 	.ss_index_one, .ss_index_two, .ss_index_three{
 		background-size:cover;
 	}
@@ -3042,7 +3042,7 @@ html{
 		padding: 0px;
 	}
 	.ss_product_content h2 a{
-		white-space: nowrap; 
+		white-space: nowrap;
 		overflow: hidden;
 		text-overflow: ellipsis;
 		width:300px;
@@ -3068,7 +3068,7 @@ html{
 	}
 }
 
-@media screen and (max-width: 1559px){ 
+@media screen and (max-width: 1559px){
     .ss_header .ss_menu li {
 		padding: 15px 7px;
 	}
@@ -3101,7 +3101,7 @@ html{
 	}
 }
 
-@media screen and (max-width: 1410px){ 
+@media screen and (max-width: 1410px){
     .ss_header .ss_menu li {
 		padding: 15px 4px;
 	}
@@ -3221,14 +3221,14 @@ html{
 		position: fixed;
 		left: -250px;
 		top: 0;
-		width: 210px; 
+		width: 210px;
 		text-align: left;
 		z-index: 98;
 		height: 100%;
 		background-attachment: fixed;
 		transition:0.3s;
 		overflow-y:auto;
-	}	
+	}
 	.ss_menu.ss_toggle ul {
 		left: 0;
 	}
@@ -3256,7 +3256,7 @@ html{
 	}
 	.ss_menuP:hover .ss_subMenu{
 		opacity: 0;
-		visibility: hidden;		
+		visibility: hidden;
 	}
 	.ss_menu .show_subMenu ul.ss_subMenu{
 		position: inherit;
@@ -3338,7 +3338,7 @@ html{
 	.order_success {
 		padding: 80px 20px;
 	}
-	
+
 	.ss_menu li .ss_subMenu li {
 		padding: 0px 15px;
 	}
@@ -3358,7 +3358,7 @@ html{
 
 }
 @media (max-width: 1199px) and (min-width: 992px){
-	
+
 	.ss_about_three_right p {
 		right: 50px;
 	}
@@ -3546,7 +3546,7 @@ html{
 @media screen and (max-width : 992px) and (orientation : landscape){
 	.s_login {
 		overflow: auto;
-    } 
+    }
  }
 
 @media (max-width: 992px) and (min-width: 767px){
@@ -3766,7 +3766,7 @@ html{
 	}
 	.ss_feature_main {
 		padding: 56px 0px 30px;
-	}	
+	}
 	.ss_author {
 		padding-bottom: 40px;
 	}
@@ -3820,7 +3820,7 @@ html{
 		padding: 40px;
 	}
 	.ss_pv_l_content{
-		padding-top:15px;	
+		padding-top:15px;
 	}
 	.ss_user a {
 		margin-right: 20px;
@@ -3956,7 +3956,7 @@ html{
 	.ss_five_product.ss_box_bg, .ss_six_p_img.ss_box_bg {
 		padding: 30px;
 	}
-	
+
 	#thumbs_img ul li img {
 		width: 65px;
 		height: 65px;
@@ -4012,7 +4012,7 @@ html{
 		width: 89%;
 	}
 }
-@media screen and (min-color-index:0) and(-webkit-min-device-pixel-ratio:0){ 	
+@media screen and (min-color-index:0) and(-webkit-min-device-pixel-ratio:0){
 		.ss_eight img {
 			border-radius: 10px;
 		}
