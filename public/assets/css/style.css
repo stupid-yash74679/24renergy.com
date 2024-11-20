@@ -246,7 +246,7 @@ h3.ss_h3_center:before {
     border-radius: 10px;
 	padding: 15px 0px;
 	z-index: 5;
-	min-width: 130px;
+	min-width: 250px;
 	opacity: 0;
     visibility: hidden;
 	background:#ffffff;
