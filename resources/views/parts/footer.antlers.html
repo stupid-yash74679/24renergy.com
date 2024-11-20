@@ -85,13 +85,11 @@
                 <div class="row">
                     <div class="col-lg-4 col-md-6 col-sm-6">
                         <div class="ss_foot_sec">
-                            <h2 class="ss_foot_head">Useful Links</h2>
+                            <h2 class="ss_foot_head">Latest Blogs</h2>
                             <ul>
-                                <li><a href="#"><i class="fas fa-circle"></i> Suppliers</a></li>
-                                <li><a href="service.html"><i class="fas fa-circle"></i> Services</a></li>
-                                <li><a href="trade-show.html"><i class="fas fa-circle"></i> Trade Show</a></li>
-                                <li><a href="pv-industry.html"><i class="fas fa-circle"></i> Pv Industry</a></li>
-                                <li><a href="contact.html"><i class="fas fa-circle"></i> Contact Us</a></li>
+                                {{ collection:blogs limit="3" }}
+                                    <li><a href="{{ url }}"><i class="fas fa-circle"></i> {{ title }}</a></li>
+                                {{ /collection:blogs }}
                             </ul>
                         </div>
                     </div>
