@@ -6,7 +6,7 @@
                     <div class="col-lg-6 col-md-6 col-sm-6">
                         <div class="ss_foot_sec">
                             <a href="/"><img class="img-fluid" src="{{ brand:light_logo }}" alt="logo" width="150px" /></a>
-                            <p class="text-justify">24R Energy is dedicated to transforming rooftops and open spaces into efficient power plants, delivering sustainable energy solutions</p>
+                            <p>24R Energy is dedicated to transforming rooftops and open spaces into efficient power plants, delivering sustainable energy solutions</p>
                             <ul class="social_share">
                                 <li>
                                     <a href="#">
@@ -71,13 +71,11 @@
                     </div>
                     <div class="col-lg-6 col-md-6 col-sm-6">
                         <div class="ss_foot_sec">
-                            <h2 class="ss_foot_head">Products</h2>
+                            <h2 class="ss_foot_head">Solar Solutions</h2>
                             <ul>
-                                <li><a href="shop.html"><i class="fas fa-circle"></i> Solar Panel</a></li>
-                                <li><a href="shop.html"><i class="fas fa-circle"></i> Solar Plates</a></li>
-                                <li><a href="#"><i class="fas fa-circle"></i> Productivity</a></li>
-                                <li><a href="#"><i class="fas fa-circle"></i> Integration</a></li>
-                                <li><a href="#"><i class="fas fa-circle"></i> Life Time</a></li>
+                                {{ nav:footer_products }}
+                                    <li><a href="{{ url }}"><i class="fas fa-circle"></i> {{ title }}</a></li>
+                                {{ /nav:footer_products }}
                             </ul>
                         </div>
                     </div>
