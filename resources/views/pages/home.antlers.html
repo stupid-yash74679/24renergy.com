@@ -55,7 +55,7 @@
                 <div class="ss_three_right wow fadeIn" data-wow-delay="0.1s">
                     <h3>{{ about_sub_heading }}</h3>
                     <h1>{{ about_heading }}</h1>
-                    <p class="pb-4">{{ about_description }}</p>
+                    {{ about_description }}
                     <a href="{{ about_button_link }}" class="ss_btn">{{ about_button_text }}</a>
                 </div>
             </div>
@@ -65,105 +65,49 @@
 
 <section class="ss_section_five ss_section_sec_bg spacer_top spacer_bottom"> <!--===== Section Five Start =====-->
     <div class="container-fluid">
-        <h3 class="ss_h3_center text-center">easy to use</h3>
-        <h1 class="text-center mb-5">It's safe compared to electricity</h1>
+        <h3 class="ss_h3_center text-center">{{ why_sub_heading }}</h3>
+        <h1 class="text-center mb-5">{{ why_heading }}</h1>
         <div class="row">
             <div class="col-xl-4 col-lg-6">
                 <div class="ss_four_left wow fadeIn" data-wow-delay="0.1s">
-                    <div class="ss_box_bg">
+                    {{ why_points limit="3" }}
+                        <div class="ss_box_bg mt-4">
                         <div class="row">
                             <div class="col-3">
                                 <div class="ss_four_one">
-                                    <img class="img-fluid" src="assets/images/svg/icon1.svg" alt="image"/>
+                                    <img class="img-fluid" src="{{ point_icon }}" alt="image"/>
                                 </div>
                             </div>
                             <div class="col-9">
                                 <div class="ss_four_two">
-                                    <h2>Solar Plates</h2>
-                                    <p>Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores</p>
+                                    <h2>{{ point_heading }}</h2>
+                                    <p>{{ point_description }}</p>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div class="ss_box_bg mt-4">
-                        <div class="row">
-                            <div class="col-3">
-                                <div class="ss_four_one">
-                                    <img class="img-fluid" src="assets/images/svg/icon2.svg" alt="image"/>
-                                </div>
-                            </div>
-                            <div class="col-9">
-                                <div class="ss_four_two">
-                                    <h2>Solar Water Heater</h2>
-                                    <p>Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="ss_box_bg mt-4">
-                        <div class="row">
-                            <div class="col-3">
-                                <div class="ss_four_one">
-                                    <img class="img-fluid" src="assets/images/svg/icon4.svg" alt="image"/>
-                                </div>
-                            </div>
-                            <div class="col-9">
-                                <div class="ss_four_two">
-                                    <h2>Solar Wind</h2>
-                                    <p>Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+                    {{ /why_points }}
                 </div>
             </div>
             <div class="col-xl-4 col-lg-6 order-xl-last mt-lg-0 mt-md-4">
                 <div class="ss_four_left wow fadeIn" data-wow-delay="0.1s">
-                    <div class="ss_box_bg">
-                        <div class="row">
-                            <div class="col-3">
-                                <div class="ss_four_one">
-                                    <img class="img-fluid" src="assets/images/svg/icon3.svg" alt="image"/>
-                                </div>
-                            </div>
-                            <div class="col-9">
-                                <div class="ss_four_two">
-                                    <h2>Pv Solar Panel</h2>
-                                    <p>Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+                {{ why_points offset="3"  }}
                     <div class="ss_box_bg mt-4">
                         <div class="row">
                             <div class="col-3">
                                 <div class="ss_four_one">
-                                    <img class="img-fluid" src="assets/images/svg/icon5.svg" alt="image"/>
+                                    <img class="img-fluid" src="{{ point_icon }}" alt="image"/>
                                 </div>
                             </div>
                             <div class="col-9">
                                 <div class="ss_four_two">
-                                    <h2>Solar Energy</h2>
-                                    <p>Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores</p>
+                                    <h2>{{ point_heading }}</h2>
+                                    <p>{{ point_description }}</p>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div class="ss_box_bg mt-4">
-                        <div class="row">
-                            <div class="col-3">
-                                <div class="ss_four_one">
-                                    <img class="img-fluid" src="assets/images/svg/icon6.svg" alt="image"/>
-                                </div>
-                            </div>
-                            <div class="col-9">
-                                <div class="ss_four_two">
-                                    <h2>Solar System</h2>
-                                    <p>Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+                    {{ /why_points }}
                 </div>
             </div>
             <div class="col-xl-4 offset-xl-0 col-lg-6 offset-lg-3">
