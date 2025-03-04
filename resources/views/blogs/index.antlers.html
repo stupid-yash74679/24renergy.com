@@ -1,7 +1,7 @@
 <section class="ss_trade_sec_two spacer_top"> <!--===== Section Three Start =====-->
     <div class="container-fluid">
-        <h3 class="ss_h3_center text-center">upcoming events</h3>
-        <h1 class="text-center mb-5">Upcoming trade show</h1>
+        <h3 class="ss_h3_center text-center">24R Energy</h3>
+        <h1 class="text-center mb-5">Blogs</h1>
         <div class="row">
             {{ collection:blogs }}
             <div class="col-lg-4 col-md-6">
@@ -10,9 +10,7 @@
                     <h2><span>{{ date }}</span></h2>
                     <h2 class="ss_register">{{ title }}</h2>
                     <p>{{ content }}</p>
-                    <p class="ss_trade_btn">
-                        <span><a href="{{ url }}" class="ss_btn">Read More</a></span>
-                    </p>
+                    <p class="ss_trade_btn"><span><a href="{{ url }}" class="ss_btn">Read More</a></span></p>
                 </div>
             </div>
             {{ /collection:blogs }}
