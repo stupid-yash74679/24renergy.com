@@ -167,11 +167,35 @@
     </div>
 </section> <!--===== Section Six End =====-->
 
+
+<section class="ss_section_four spacer_top spacer_bottom"> <!--===== Section Four Start =====-->
+    <div class="container-fluid">
+        <div class="fw-row">
+            <div class="fw-col-xs-12">
+                <div class="index_three" style="padding-top: 50px;">
+                    <h3 style="color:#4a617e;" class="ss_h3_center text-center heading_bar">Gallery</h3>
+                    <H1 style="color:#4a617e;text-transform:capitalize;font-size:40px;font-weight:500;line-height:50px;"
+                        class="text-center">Our Completed Projects</H1>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            {{ gallery:images }}
+            <div class="col-lg-4">
+                <div class="ss_four_right" style="margin-top: 30px;">
+                    <img class="img-fluid ss_four_shadow" style="border-radius: 10px;" src="{{ url }}" alt="image" title="image" />
+                </div>
+            </div>
+            {{ /gallery:images }}
+        </div>
+    </div>
+</section> <!--===== Section Four End =====-->
+
 <section class="fw-main-row " style="background-color:#f7f9fe;">
     <div class="fw-container">
         <div class="fw-row">
             <div class="fw-col-xs-12">
-                <div class="index_three">
+                <div class="index_three" style="padding-top: 50px;">
                     <h3 style="color:#4a617e;" class="ss_h3_center text-center heading_bar">Blogs</h3>
                     <H1 style="color:#4a617e;text-transform:capitalize;font-size:40px;font-weight:500;line-height:50px;"
                         class="text-center">Explore how industrial sectors are harnessing solar energy to drive
@@ -186,31 +210,29 @@
                 <div class="fw-divider-space" style="padding-top: 40px;"></div>
             </div>
         </div>
+    </div>
+</section>
+<section class="ss_section_eight spacer_bottom"  style="background-color:#f7f9fe;">
+    <div class="container">
+        <div class="swiper-container">
+            <div class="swiper-wrapper">
+                {{ collection:blogs }}
 
-        <div class="fw-row">
-            <div class="fw-col-xs-12">
-                <section class="ss_section_eight spacer_bottom">
-                    <div class="container">
-
-                        <div class="swiper-container">
-                            <div class="swiper-wrapper">
-                                {{ collection:blogs }}
-
-                                <div class="swiper-slide">
-                                    <div class="sp_blog">
-                                        <a href="{{ url }}"> <img decoding="async" class="img-fluid"
-                                                src="{{ thumbnail_image }}" alt="{{ title }}" title="{{ title }}" /></a>
-                                        <div class="sp_blog_box" style="margin-top: 30px;">
-                                            <a class="sp_blog_date" href="{{ url }}">{{ date }}</a>
-                                            <h2><a href="{{ url }}">{{ title }}</a></h2>
-                                            <p>{{ content | truncate:150}}</p>
-                                            <a href="{{ url }}" class="sp_blog_more">Read More</a>
-                                        </div>
-                                    </div>
-                                </div>
-                                {{ /collection:blogs }}
-                            </div>
+                <div class="swiper-slide">
+                    <div class="sp_blog">
+                        <a href="{{ url }}"> <img decoding="async" class="img-fluid" src="{{ thumbnail_image }}"
+                                alt="{{ title }}" title="{{ title }}" /></a>
+                        <div class="sp_blog_box" style="margin-top: 30px;">
+                            <a class="sp_blog_date" href="{{ url }}">{{ date }}</a>
+                            <h2><a href="{{ url }}">{{ title }}</a></h2>
+                            <p>{{ content | truncate:150}}</p>
+                            <a href="{{ url }}" class="sp_blog_more">Read More</a>
                         </div>
-
                     </div>
-                </section>
+                </div>
+                {{ /collection:blogs }}
+            </div>
+        </div>
+
+    </div>
+</section>
