@@ -1,0 +1,20 @@
+<section class="ss_trade_sec_two spacer_top"> <!--===== Section Three Start =====-->
+    <div class="container-fluid">
+        <h3 class="ss_h3_center text-center">24R Energy</h3>
+        <h1 class="text-center mb-5">Our Solar Solutions</h1>
+        <div class="row">
+            {{ collection:services }}
+            <div class="col-lg-4 col-md-6">
+                <div class="up_register ss_box_bg wow fadeIn" data-wow-delay="0.1s" style="min-height: 230px;">
+                    <img class="img-fluid" src="{{ thumbnail_image }}" alt="image" style="border-radius: 10px;" />
+                    <h2 class="ss_register" style="margin-top: 30px;">{{ title }}</h2>
+                    <p class="ss_trade_btn">
+                        <span><a href="{{ url }}" class="ss_btn">Read More</a></span>
+                    </p>
+                </div>
+            </div>
+            {{ /collection:services }}
+
+        </div>
+    </div>
+</section>

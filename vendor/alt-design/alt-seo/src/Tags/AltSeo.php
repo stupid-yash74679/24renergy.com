@@ -46,7 +46,7 @@ class AltSeo extends Tags
      */
     public function meta()
     {
-        return view('alt-seo::meta', $this->meta_array());
+        return view('alt-seo::meta', $this->meta_array())->render();
     }
 
     // Supporting function for the meta() function view
@@ -148,7 +148,7 @@ class AltSeo extends Tags
         }
 
         // Return current url
-        return ENV('APP_URL') . $this->context->value('url');
+        return request()->fullUrl();
     }
 
     /**

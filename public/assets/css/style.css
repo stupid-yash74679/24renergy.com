@@ -1285,10 +1285,6 @@ h2.ss_foot_head {
     position: relative;
     overflow: visible;
 }
-.up_register svg,.up_register img{
-	width:100px;
-	height:100px;
-}
 .up_register:hover img {
     transform: scale(1.03);
 }
@@ -1494,7 +1490,7 @@ button.ss_btn:hover {
 }
 /* ===contact us=== */
 .ss_contact_left{
-	background: linear-gradient(-55deg , #36d1dc, #5b86e5);
+	background:#10385c;
 	padding:60px;
 }
 .ss_contact_right{
@@ -1717,7 +1713,7 @@ button.ss_btn:hover {
     padding-top: 2px;
 }
 .happy_clients{
-	background:linear-gradient(-55deg , #36d1dc, #5b86e5);
+	background:#10385c;
 }
 .ss_about_counter{
 	background-color:#f6f9fe;

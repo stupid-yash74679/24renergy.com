@@ -8,7 +8,7 @@
         </div>
         <div class="col-xl-7 col-lg-6">
             <div class="ss_banner_right">
-                <img class="img-fluid" src="{{ hero_image }}" alt="{{ hero_image:alt }}"/>
+                <img class="img-fluid" src="{{ hero_image }}" alt="{{ hero_image:alt }}" />
             </div>
         </div>
     </div>
@@ -18,10 +18,12 @@
         <div class="solar_wave"></div>
     </div>
     <div class="shape_dot">
-        <img class="img-fluid" src="https://kamleshyadav.com/html/solar-supplier/html/bootstrap-5/assets/images/shape_dot.png" alt="image"/>
+        <img class="img-fluid"
+            src="https://kamleshyadav.com/html/solar-supplier/html/bootstrap-5/assets/images/shape_dot.png"
+            alt="image" />
     </div>
     <div class="shape_wave2">
-        <img class="img-fluid" src="assets/images/wave.png" alt="image"/>
+        <img class="img-fluid" src="assets/images/wave.png" alt="image" />
     </div>
 </div>
 
@@ -32,7 +34,7 @@
                 {{ top_services }}
                 <div class="col-lg-4 col-md-4 col-sm-12">
                     <div class="ss_two_sec wow fadeIn" data-wow-delay="0.1s">
-                        <img class="img-fluid" src="{{ service_icon }}" alt="{{ service_icon:alt }}"/>
+                        <img class="img-fluid" src="{{ service_icon }}" alt="{{ service_icon:alt }}" />
                         <h2>{{ title }}</h2>
                         <p>{{ content }}</p>
                     </div>
@@ -48,7 +50,7 @@
         <div class="row">
             <div class="col-lg-6">
                 <div class="ss_three_left">
-                    <img class="img-fluid" src="{{ about_image }}" alt="image"/>
+                    <img class="img-fluid" src="{{ about_image }}" alt="image" />
                 </div>
             </div>
             <div class="col-lg-6 align-self-center">
@@ -56,7 +58,7 @@
                     <h3>{{ about_sub_heading }}</h3>
                     <h1>{{ about_heading }}</h1>
                     {{ about_description }}
-                    <a href="{{ about_button_link }}" class="ss_btn">{{ about_button_text }}</a>
+                    <a href="{{ aboutus_button_link }}" class="ss_btn">{{ about_button_text }}</a>
                 </div>
             </div>
         </div>
@@ -75,7 +77,7 @@
                         <div class="row">
                             <div class="col-3">
                                 <div class="ss_four_one">
-                                    <img class="img-fluid" src="{{ point_icon }}" alt="image"/>
+                                    <img class="img-fluid" src="{{ point_icon }}" alt="image" />
                                 </div>
                             </div>
                             <div class="col-9">
@@ -91,12 +93,12 @@
             </div>
             <div class="col-xl-4 col-lg-6 order-xl-last mt-lg-0 mt-md-4">
                 <div class="ss_four_left wow fadeIn" data-wow-delay="0.1s">
-                    {{ why_points offset="3"  }}
+                    {{ why_points offset="3" }}
                     <div class="ss_box_bg mt-4">
                         <div class="row">
                             <div class="col-3">
                                 <div class="ss_four_one">
-                                    <img class="img-fluid" src="{{ point_icon }}" alt="image"/>
+                                    <img class="img-fluid" src="{{ point_icon }}" alt="image" />
                                 </div>
                             </div>
                             <div class="col-9">
@@ -110,11 +112,12 @@
                     {{ /why_points }}
                 </div>
             </div>
-            <div class="col-xl-4 offset-xl-0 col-lg-6 offset-lg-3">
-                <div class="ss_easy_use wow zoomIn" data-wow-delay="0.2s">
-                    <img class="img-fluid" src="https://kamleshyadav.com/html/solar-supplier/html/bootstrap-5/assets/images/robote.png" alt="image"/>
-                </div>
+            <div class="col-xl-4 offset-xl-0 col-lg-6 offset-lg-3"
+                style="height: 100%; display: flex; align-items: center; justify-content: center;">
+                <img src="{{ wcu_image }}" alt="Descriptive text"
+                    style="max-height: 100%; max-width: 100%; object-fit: contain;" />
             </div>
+
         </div>
     </div>
 </section> <!--===== Section Five End =====-->
@@ -152,7 +155,9 @@
                         <img class="img-fluid" src="{{ thumbnail_image }}" alt="image" title="image" />
                     </div>
                     <div class="ss_product_content ss_box_bg">
-                        <a href="{{ url }}"><h2>{{ title }}</h2></a>
+                        <a href="{{ url }}">
+                            <h2>{{ title }}</h2>
+                        </a>
                         <p>{{ content }}</p>
                     </div>
                 </div>
@@ -162,24 +167,50 @@
     </div>
 </section> <!--===== Section Six End =====-->
 
-<section class="ss_section_eight spacer_top spacer_bottom"> <!--===== Section Eight Start =====-->
-    <div class="container-fluid">
-        <h3 class="ss_h3_center text-center">Blogs</h3>
-        <h1 class="text-center mb-5">Explore how industrial sectors are harnessing solar energy to drive efficiency, sustainability, and innovation.</h1>
-        <div class="swiper-container">
-            <div class="swiper-wrapper">
-                {{ collection:blogs }}
-                    <div class="swiper-slide">
-                        <div class="ss_eight ss_box_wbg">
-                            <a href="{{ url }}"><img class="img-fluid" src="{{ thumbnail_image }}" alt="image" title="image" /></a>
-                            <div class="ss_product_content ss_box_bg">
-                                <h2><a href="{{ url }}">{{ title }}</a> <span><a href="{{ url }}">{{ date }}</a></span></h2>
-                                <p>{{ content }}</p>
-                            </div>
-                        </div>
-                    </div>
-                {{ /collection:blogs }}
+<section class="fw-main-row " style="background-color:#f7f9fe;">
+    <div class="fw-container">
+        <div class="fw-row">
+            <div class="fw-col-xs-12">
+                <div class="index_three">
+                    <h3 style="color:#4a617e;" class="ss_h3_center text-center heading_bar">Blogs</h3>
+                    <H1 style="color:#4a617e;text-transform:capitalize;font-size:40px;font-weight:500;line-height:50px;"
+                        class="text-center">Explore how industrial sectors are harnessing solar energy to drive
+                        efficiency, sustainability, and innovation.</H1>
+                </div>
             </div>
         </div>
-    </div>
-</section> <!--===== Section Eight End =====-->
+
+        <div class="fw-row">
+            <div class="fw-col-xs-12">
+
+                <div class="fw-divider-space" style="padding-top: 40px;"></div>
+            </div>
+        </div>
+
+        <div class="fw-row">
+            <div class="fw-col-xs-12">
+                <section class="ss_section_eight spacer_bottom">
+                    <div class="container">
+
+                        <div class="swiper-container">
+                            <div class="swiper-wrapper">
+                                {{ collection:blogs }}
+
+                                <div class="swiper-slide">
+                                    <div class="sp_blog">
+                                        <a href="{{ url }}"> <img decoding="async" class="img-fluid"
+                                                src="{{ thumbnail_image }}" alt="{{ title }}" title="{{ title }}" /></a>
+                                        <div class="sp_blog_box" style="margin-top: 30px;">
+                                            <a class="sp_blog_date" href="{{ url }}">{{ date }}</a>
+                                            <h2><a href="{{ url }}">{{ title }}</a></h2>
+                                            <p>{{ content | truncate:150}}</p>
+                                            <a href="{{ url }}" class="sp_blog_more">Read More</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                {{ /collection:blogs }}
+                            </div>
+                        </div>
+
+                    </div>
+                </section>
