@@ -1,6 +1,6 @@
 
 <section class="ss_map">
-    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4179.392398819155!2d73.03560737575881!3d21.724621880104504!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be0211d20ec1a1b%3A0x9632563b3f7138c1!2s24R%20Energy%20-%20Solar%20%26%20Lights!5e1!3m2!1sen!2sin!4v1732078694388!5m2!1sen!2sin"  frameborder="0" style="border:0" allowfullscreen></iframe>
+    <iframe src="{{ brand:gmap_url }}"  frameborder="0" style="border:0" allowfullscreen></iframe>
 </section>
 
 <section class="ss_contact ss_section_sec_bg spacer_bottom"> <!--===== Form Section Start =====-->
@@ -14,7 +14,7 @@
                                 <path d="m204.5 458.605469v51.855469l-12.539062-10.128907c-1.9375-1.566406-48.035157-38.992187-94.78125-92.660156-64.484376-74.035156-97.179688-140.492187-97.179688-197.519531v-5.652344c0-112.761719 91.738281-204.5 204.5-204.5s204.5 91.738281 204.5 204.5v5.652344c0 4.789062-.253906 9.652344-.714844 14.574218l-39.992187-36.484374c-8.191407-83.15625-78.519531-148.339844-163.792969-148.339844-90.757812 0-164.597656 73.839844-164.597656 164.597656v5.652344c0 96.367187 124.164062 213.027344 164.597656 248.453125zm122.699219-28.660157h59.851562v-59.851562h-59.851562zm-122.699219-310.238281c46.753906 0 84.792969 38.039063 84.792969 84.792969s-38.039063 84.792969-84.792969 84.792969-84.792969-38.039063-84.792969-84.792969 38.039063-84.792969 84.792969-84.792969zm0 39.902344c-24.753906 0-44.890625 20.136719-44.890625 44.890625 0 24.75 20.136719 44.890625 44.890625 44.890625 24.75 0 44.890625-20.140625 44.890625-44.890625 0-24.753906-20.140625-44.890625-44.890625-44.890625zm280.609375 243.222656-11.21875-10.234375v64.058594c0 29.828125-24.269531 54.09375-54.097656 54.09375h-126.332031c-29.828126 0-54.097657-24.265625-54.097657-54.09375v-64.058594l-11.21875 10.234375-26.890625-29.476562 155.371094-141.746094 155.375 141.746094zm-51.121094-46.636719-77.363281-70.574218-77.359375 70.574218v100.457032c0 7.828125 6.367187 14.195312 14.195313 14.195312h126.332031c7.828125 0 14.195312-6.367187 14.195312-14.195312zm0 0"/>
                             </svg>
                             <h2>Address:</h2>
-                            <p>4 & 5, RK Avenue, Nr. Jhulelal Hospital, Tavra Road, Bharuch (GJ) - 392 015, India</p>
+                            <p>{{ brand:office_address }}</p>
                         </div>
                         <div class="ss_contact_two">
                             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 485.211 485.211">
@@ -28,7 +28,7 @@
                                 </g>
                             </svg>
                             <h2>Email:</h2>
-                            <p>sales@24renergy.com</p>
+                            <p>{{ brand:email }}</p>
                             <p>24renergy@gmail.com</p>
                         </div>
                         <div class="ss_contact_three">
@@ -54,8 +54,7 @@
                                 </g>
                             </svg>
                             <h2>Phone:</h2>
-                            <p>+91 99255 02300</p>
-                            <p>+91 99255 02369</p>
+                            <p>{{ brand:phone_number }}</p>
                         </div>
                     </div>
                 </div>
@@ -66,19 +65,19 @@
                         <form >
                             <div class="ss_contact_form">
                                 <label>Name</label>
-                                <input type="text" placeholder="Enter your name" name="full_name" id="full_name" class="require"/>
+                                <input type="text" placeholder="Full Name" name="full_name" id="full_name" class="require"/>
                             </div>
                             <div class="ss_contact_form">
                                 <label>Email</label>
-                                <input type="text" name="email" id="email" placeholder="Enter your email" class="require" data-valid="email" data-error="Email should be valid."/>
+                                <input type="text" name="email" id="email" placeholder="Email" class="require" data-valid="email" data-error="Email should be valid."/>
                             </div>
                             <div class="ss_contact_form">
-                                <label>Subject</label>
-                                <input type="text" name="subject" id="subject" placeholder="Enter your subject" class="require" />
+                                <label>Phone Number</label>
+                                <input type="text" name="phone" id="phone" placeholder="Phone Number" class="require" />
                             </div>
                             <div class="ss_contact_form">
                                 <label class="ss_message">Message</label>
-                                <textarea name="message" id="message" placeholder="Enter your message" class="require" ></textarea>
+                                <textarea name="message" id="message" placeholder="Your Message" class="require" ></textarea>
                             </div>
                             <button type="button" class="ss_btn submitForm">Submit</button>
                             <div class="response"></div>
